@@ -15,3 +15,8 @@ mahasiswa::mahasiswa(int nim, string nama) // Konstruktor dengan parameter adala
     cout << "Nama: " << nama << endl;
 }
 
+int main()
+{
+    mahasiswa mhs(12345, "Pascal"); // Membuat objek mhs dari kelas mahasiswa dengan menggunakan konstruktor yang memiliki parameter. Saat objek mhs dibuat, konstruktor mahasiswa akan dipanggil secara otomatis dengan nilai parameter nim sebesar 12345 dan nama "Pascal". Konstruktor ini akan mencetak pesan "Constructor Dengan Parameter Terpanggil" ke layar menggunakan cout, serta menampilkan nilai NIM dan Nama yang diberikan sebagai parameter. Dengan membuat objek mhs dengan parameter, kita dapat melihat pesan tersebut setiap kali kita menjalankan program, sehingga kita dapat memahami konsep konstruktor dengan parameter dalam pemrograman berorientasi objek.
+    return 0;
+}
