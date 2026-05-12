@@ -13,3 +13,9 @@ public:
     }
 };
 
+int main()
+{
+    buku bukunya; // Membuat objek bukunya dari kelas buku. Objek ini dapat digunakan untuk mengakses fungsi-fungsi dan variabel anggota dalam kelas buku, seperti fungsi setget untuk mengatur dan mendapatkan nilai dari variabel anggota judul.
+    cout << bukunya.setget("Matematika"); // Memanggil fungsi setget pada objek bukunya dengan parameter "Matematika". Fungsi ini akan mengatur nilai variabel anggota judul dalam objek bukunya menjadi "Matematika" dan kemudian mengembalikan nilai tersebut, yang akan dicetak ke layar menggunakan cout.
+    return 0;
+}
