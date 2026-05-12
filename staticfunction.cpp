@@ -44,3 +44,21 @@ void Mahasiswa::printAll() // Fungsi printAll adalah fungsi yang digunakan untuk
     cout << endl;
 }
 
+int main() // Fungsi main adalah fungsi utama dalam program C++ yang digunakan sebagai titik masuk untuk menjalankan program. Dalam fungsi main, kita membuat beberapa objek mahasiswa dengan nama yang berbeda, dan kemudian memanggil fungsi printAll untuk mencetak informasi tentang setiap mahasiswa, termasuk ID dan nama. Dengan menggunakan fungsi main, kita dapat menjalankan program dan melihat hasil output yang dihasilkan oleh objek mahasiswa yang dibuat.
+{
+    Mahasiswa mhs1("Sri Dadi"); // Membuat objek mhs1 dari kelas Mahasiswa dengan nama "Sri Dadi". Objek ini akan memiliki ID yang diatur secara otomatis berdasarkan nomor induk mahasiswa yang meningkat, dan nama yang diinisialisasi dengan "Sri Dadi". Dengan membuat objek mhs1, kita dapat mengelola informasi tentang mahasiswa tersebut, termasuk ID dan nama, serta mencetak informasi tersebut menggunakan fungsi printAll.
+    Mahasiswa mhs2("Budi Jatmiko");
+    Mahasiswa::setNim(9); // Memanggil fungsi statis setNim untuk mengatur nilai nomor induk mahasiswa (nim) menjadi 9. Dengan memanggil fungsi setNim, kita dapat mengubah nilai nomor induk mahasiswa secara langsung tanpa harus membuat objek mahasiswa terlebih dahulu, sehingga setiap mahasiswa yang dibuat setelah pemanggilan fungsi setNim akan memiliki ID yang diatur berdasarkan nomor induk mahasiswa yang baru, yaitu 10 untuk mhs3 dan 11 untuk mhs4.
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko Wahono");
+
+    mhs1.printAll(); // Memanggil fungsi printAll pada objek mhs1 untuk mencetak informasi tentang mahasiswa mhs1, termasuk ID dan nama. Fungsi printAll akan menampilkan nilai ID dan nama mahasiswa mhs1 ke layar menggunakan cout. Dengan memanggil fungsi printAll pada objek mhs1, kita dapat melihat informasi lengkap tentang mahasiswa tersebut, termasuk ID unik yang dihasilkan berdasarkan nomor induk mahasiswa yang meningkat.
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    cout << "Akses dari luar object = " << Mahasiswa::getNim() << endl; // Mengakses fungsi statis getNim dari luar objek untuk mendapatkan nilai nomor induk mahasiswa (nim) saat ini. Dengan menggunakan Mahasiswa::getNim(), kita dapat dengan mudah mendapatkan nilai nomor induk mahasiswa yang sedang digunakan untuk mengatur ID mahasiswa yang dibuat setelah pemanggilan fungsi setNim, sehingga kita dapat melihat nomor induk mahasiswa yang sedang digunakan dalam program.
+    system("pause"); // Menambahkan perintah system("pause") untuk menghentikan program sementara setelah mencetak informasi tentang mahasiswa, sehingga kita dapat melihat hasil output sebelum program berakhir. Dengan menggunakan system("pause"), kita dapat memastikan bahwa jendela konsol tetap terbuka setelah mencetak informasi, sehingga kita dapat melihat hasil output dengan jelas sebelum menutup jendela konsol.
+
+    return 0;
+}
