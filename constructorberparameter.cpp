@@ -8,3 +8,10 @@ public: // Variabel anggota dan fungsi anggota dalam kelas mahasiswa dideklarasi
     mahasiswa(int nim, string nama); // Konstruktor dengan parameter adalah sebuah fungsi khusus dalam kelas yang memiliki nama yang sama dengan nama kelas dan tidak memiliki tipe pengembalian, tetapi menerima parameter untuk menginisialisasi variabel anggota atau melakukan tindakan tertentu saat objek dibuat. Dalam kelas mahasiswa, konstruktor ini menerima dua parameter, yaitu nim (nomor induk mahasiswa) dan nama (nama mahasiswa). Saat objek mahasiswa dibuat dengan menggunakan konstruktor ini, pesan "Constructor Dengan Parameter Terpanggil" akan dicetak ke layar menggunakan cout, serta nilai NIM dan Nama yang diberikan sebagai parameter akan ditampilkan. Dengan menggunakan konstruktor dengan parameter, kita dapat memberikan nilai awal untuk variabel anggota saat objek dibuat, sehingga kita dapat mengelola informasi tentang mahasiswa dengan lebih efektif.
 };
 
+mahasiswa::mahasiswa(int nim, string nama) // Konstruktor dengan parameter adalah sebuah fungsi khusus dalam kelas yang memiliki nama yang sama dengan nama kelas dan tidak memiliki tipe pengembalian, tetapi menerima parameter untuk menginisialisasi variabel anggota atau melakukan tindakan tertentu saat objek dibuat. Dalam kelas mahasiswa, konstruktor ini menerima dua parameter, yaitu nim (nomor induk mahasiswa) dan nama (nama mahasiswa). Saat objek mahasiswa dibuat dengan menggunakan konstruktor ini, pesan "Constructor Dengan Parameter Terpanggil" akan dicetak ke layar menggunakan cout, serta nilai NIM dan Nama yang diberikan sebagai parameter akan ditampilkan. Dengan menggunakan konstruktor dengan parameter, kita dapat memberikan nilai awal untuk variabel anggota saat objek dibuat, sehingga kita dapat mengelola informasi tentang mahasiswa dengan lebih efektif.
+{
+    cout << "Constructor Dengan Parameter Terpanggil" << endl;
+    cout << "NIM: " << nim << endl;
+    cout << "Nama: " << nama << endl;
+}
+
