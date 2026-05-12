@@ -30,3 +30,5 @@ public:
     };
 };
 
+int Mahasiswa::nim = 0; // Inisialisasi variabel statis nim dengan nilai awal 0. Variabel statis ini akan digunakan untuk menyimpan nomor induk mahasiswa yang akan meningkat setiap kali fungsi setID dipanggil, sehingga setiap mahasiswa yang dibuat akan memiliki ID yang unik berdasarkan nomor induk mahasiswa yang meningkat. Dengan menginisialisasi nim dengan nilai awal 0, kita dapat memastikan bahwa ID mahasiswa pertama yang dibuat akan dimulai dari 1, dan setiap mahasiswa berikutnya akan memiliki ID yang meningkat secara otomatis berdasarkan nomor induk mahasiswa yang meningkat.
+
