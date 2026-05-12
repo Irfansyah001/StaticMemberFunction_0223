@@ -29,3 +29,17 @@ void Mahasiswa::printAll() { // Fungsi printAll adalah fungsi yang digunakan unt
     cout << endl;
 };
 
+int main() // Fungsi main adalah fungsi utama dalam program C++ yang digunakan sebagai titik masuk untuk menjalankan program. Dalam fungsi main, kita membuat beberapa objek mahasiswa dengan nama yang berbeda, dan kemudian memanggil fungsi printAll untuk mencetak informasi tentang setiap mahasiswa, termasuk ID dan nama. Dengan menggunakan fungsi main, kita dapat menjalankan program dan melihat hasil output yang dihasilkan oleh objek mahasiswa yang dibuat.
+{
+    Mahasiswa mhs1("Lia Kurnia"); // Membuat objek mhs1 dari kelas Mahasiswa dengan nama "Lia Kurnia". Objek ini akan memiliki ID yang diatur secara otomatis berdasarkan nomor induk mahasiswa yang meningkat, dan nama yang diinisialisasi dengan "Lia Kurnia". Dengan membuat objek mhs1, kita dapat mengelola informasi tentang mahasiswa tersebut, termasuk ID dan nama, serta mencetak informasi tersebut menggunakan fungsi printAll.
+    Mahasiswa mhs2("Asroni");
+    Mahasiswa mhs3("Andi Kurniawan");
+    Mahasiswa mhs4("Joko Purbo");
+
+    mhs1.printAll(); // Memanggil fungsi printAll pada objek mhs1 untuk mencetak informasi tentang mahasiswa mhs1, termasuk ID dan nama. Fungsi printAll akan menampilkan nilai ID dan nama mahasiswa mhs1 ke layar menggunakan cout. Dengan memanggil fungsi printAll pada objek mhs1, kita dapat melihat informasi lengkap tentang mahasiswa tersebut, termasuk ID unik yang dihasilkan berdasarkan nomor induk mahasiswa yang meningkat.
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    return 0;
+}
