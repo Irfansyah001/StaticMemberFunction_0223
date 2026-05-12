@@ -18,3 +18,10 @@ public:
     }
 };
 
+int main()
+{
+    buku bukunya; // Membuat objek bukunya dari kelas buku. Objek ini dapat digunakan untuk mengakses fungsi-fungsi dan variabel anggota dalam kelas buku, seperti fungsi setJudul untuk mengatur nilai dari variabel anggota judul, dan fungsi getJudul untuk mendapatkan nilai dari variabel anggota judul.
+    cout << bukunya.setJudul("Matematika").getJudul(); // Memanggil fungsi setJudul pada objek bukunya dengan parameter "Matematika". Fungsi ini akan mengatur nilai variabel anggota judul dalam objek bukunya menjadi "Matematika" dan kemudian mengembalikan objek itu sendiri (dengan menggunakan return *this). Setelah itu, kita memanggil fungsi getJudul pada objek yang dikembalikan untuk mendapatkan nilai judul yang telah diatur, dan mencetaknya ke layar menggunakan cout. Dengan menggunakan method chaining seperti ini, kita dapat mengatur dan mendapatkan nilai dari variabel anggota dalam satu baris kode, sehingga membuat kode lebih ringkas dan mudah dibaca.
+
+    return 0;
+}
