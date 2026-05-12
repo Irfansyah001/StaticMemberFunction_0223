@@ -19,3 +19,7 @@ public:
 
 int Mahasiswa::nim = 10; // Inisialisasi variabel statis nim dengan nilai awal 10. Variabel statis ini akan digunakan untuk menyimpan nomor induk mahasiswa yang akan meningkat setiap kali fungsi setID dipanggil, sehingga setiap mahasiswa yang dibuat akan memiliki ID yang unik berdasarkan nomor induk mahasiswa yang meningkat. Dengan menginisialisasi nim dengan nilai awal 10, kita dapat memastikan bahwa ID mahasiswa pertama yang dibuat akan dimulai dari 11, dan setiap mahasiswa berikutnya akan memiliki ID yang meningkat secara otomatis berdasarkan nomor induk mahasiswa yang meningkat.
 
+void Mahasiswa::setID() { // Fungsi setID adalah fungsi yang digunakan untuk mengatur nilai ID mahasiswa berdasarkan nomor induk mahasiswa (nim). Fungsi ini akan meningkatkan nilai nim secara otomatis setiap kali dipanggil, sehingga setiap mahasiswa yang dibuat akan memiliki ID yang unik berdasarkan nomor induk mahasiswa yang meningkat. Dengan menggunakan fungsi setID, kita dapat memastikan bahwa setiap mahasiswa memiliki ID yang berbeda dan terurut berdasarkan nomor induk mahasiswa.
+    id = ++nim; // Meningkatkan nilai nim secara otomatis dengan menggunakan operator pre-increment (++nim) dan kemudian menetapkan nilai tersebut ke variabel anggota id. Dengan menggunakan operator pre-increment, kita memastikan bahwa nilai nim akan meningkat terlebih dahulu sebelum digunakan untuk mengatur nilai ID mahasiswa, sehingga setiap mahasiswa yang dibuat akan memiliki ID yang unik berdasarkan nomor induk mahasiswa yang meningkat.
+};
+
