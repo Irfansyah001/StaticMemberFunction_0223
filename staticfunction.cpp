@@ -37,3 +37,10 @@ void Mahasiswa::setID() // Fungsi setID adalah fungsi yang digunakan untuk menga
     id = ++nim; // Meningkatkan nilai nim secara otomatis dengan menggunakan operator pre-increment (++nim) dan kemudian menetapkan nilai tersebut ke variabel anggota id. Dengan menggunakan operator pre-increment, kita memastikan bahwa nilai nim akan meningkat terlebih dahulu sebelum digunakan untuk mengatur nilai ID mahasiswa, sehingga setiap mahasiswa yang dibuat akan memiliki ID yang unik berdasarkan nomor induk mahasiswa yang meningkat.
 }
 
+void Mahasiswa::printAll() // Fungsi printAll adalah fungsi yang digunakan untuk mencetak informasi tentang mahasiswa, termasuk ID dan nama. Fungsi ini akan menampilkan nilai ID dan nama mahasiswa ke layar menggunakan cout. Dengan menggunakan fungsi printAll, kita dapat dengan mudah melihat informasi lengkap tentang setiap mahasiswa yang dibuat, termasuk ID unik yang dihasilkan berdasarkan nomor induk mahasiswa.
+{
+    cout << "ID: " << id << endl;
+    cout << "Nama: " << nama << endl;
+    cout << endl;
+}
+
